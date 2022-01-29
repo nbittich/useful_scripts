@@ -15,9 +15,6 @@ syntax enable
 filetype plugin indent on
 
 set mouse=nv
-"if (has("termguicolors"))
- "set termguicolors
-"endif
 colorscheme molokai
 
 
