@@ -14,8 +14,7 @@ call plug#end()
 syntax enable
 filetype plugin indent on
 
-set mouse=nv
-
+set mouse-=a
 if (has("termguicolors"))
  set termguicolors
 endif
