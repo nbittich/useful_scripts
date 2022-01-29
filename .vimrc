@@ -8,17 +8,17 @@ Plug 'rust-lang/rust.vim'
 Plug 'mattn/webapi-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/tagbar'
-Plug 'jacoborus/tender.vim'
+Plug 'yuezk/vim-js'
 call plug#end()
 
 syntax enable
 filetype plugin indent on
 
-set mouse-=a
-if (has("termguicolors"))
- set termguicolors
-endif
-colorscheme tender
+set mouse=nv
+"if (has("termguicolors"))
+ "set termguicolors
+"endif
+colorscheme molokai
 
 
 " Coc settings 
@@ -194,3 +194,5 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " Explorer
 :nmap <space>x <Cmd>CocCommand explorer<CR>
 
+" prettier
+autocmd FileType javascript set formatprg=prettier\ --stdin
